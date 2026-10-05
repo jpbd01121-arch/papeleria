@@ -22,3 +22,7 @@ def registro():
 @app.route('/perfil')
 def perfil():
     return render_template('perfil.html')
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=8088, debug=True)
+
