@@ -1,1 +1,26 @@
-<h1>Vista de Inicio</h1>
+{% extends 'plantilla.html' %}
+
+{% block titulo %}Inicio | Papelia {% endblock %}
+
+{% block cabecera %}Página de Inicio{% endblock %}
+
+{% block contenido %}
+<section class="seccion-multimedia">
+    <h2>Bienvenido al Sistema de Punto de Venta</h2>
+    <div class="galeria-flex">
+        <article class="card-multimedia">
+            <img src="{{ url_for('static', filename='img/cuaderno.jpg') }}" alt="Cuaderno" width="250">
+            <h3>Cuadernos de Alta Calidad</h3>
+        </article>
+        <article class="card-multimedia">
+            <img src="{{ url_for('static', filename='img/boligrafo.jpg') }}" alt="Bolígrafo" width="250">
+            <h3>Artículos de Escritura</h3>
+        </article>
+    </div>
+    <div class="video-container">
+        <h3>Video Promocional Papelia</h3>
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+{% endblock %}
+

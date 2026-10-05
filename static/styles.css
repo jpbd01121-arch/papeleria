@@ -33,3 +33,18 @@ footer {
     text-align: center;
 }
 
+.galeria-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.card-multimedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
