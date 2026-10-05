@@ -1,16 +1,32 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background-color: #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
 }
 
-body {
-    background-color: whitesmoke;
-    color: #333;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    gap: 15px;
+.contenido-principal {
+    flex: 2;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 6px;
 }
+
+.tarjeta-producto {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background-color: #f8fafc;
+}
+
+.panel-lateral {
+    flex: 1;
+    padding: 10px;
+    background-color: #fef3c7;
+    border: 1px dashed #d97706;
+    border-radius: 6px;
+}
+
