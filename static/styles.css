@@ -1,32 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Debug Visual de Cajas Estructurales */
+header {
+    background-color: #ffcccc;
+    border: 2px solid red;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: lightblue;
+    border: 2px solid blue;
+    padding: 10px;
+}
+
 main {
+    background-color: #ccffcc;
+    border: 2px solid green;
     display: flex;
-    flex-direction: row;
-    gap: 15px;
-    background-color: #e2e8f0;
     padding: 15px;
-    border-radius: 8px;
+    gap: 15px;
 }
 
-.contenido-principal {
-    flex: 2;
+footer {
+    background-color: lightcyan;
+    border: 2px solid black;
     padding: 10px;
-    background-color: #ffffff;
-    border-radius: 6px;
-}
-
-.tarjeta-producto {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #cbd5e1;
-    border-radius: 4px;
-    background-color: #f8fafc;
-}
-
-.panel-lateral {
-    flex: 1;
-    padding: 10px;
-    background-color: #fef3c7;
-    border: 1px dashed #d97706;
-    border-radius: 6px;
+    text-align: center;
 }
 
