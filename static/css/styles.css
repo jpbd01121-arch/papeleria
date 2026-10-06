@@ -19,6 +19,11 @@ nav {
 }
 
 main {
+
+    main .content-area {
+    width: 100%;
+}
+
     background-color: #ccffcc;
     border: 2px solid green;
     display: flex;
@@ -45,6 +50,22 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 5px;
+    }
+    .form-control {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
 
 

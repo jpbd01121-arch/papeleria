@@ -1,1 +1,51 @@
-<h1>Registro</h1>
+{% extends 'plantilla.html' %}
+
+{% block titulo %}Registro | Papelia POS{% endblock %}
+
+{% block cabecera %}Registro de Usuarios{% endblock %}
+
+{% block contenido %}
+<div class="w-100 d-flex justify-content-center my-4">
+    <div class="card shadow-lg p-4 bg-dark text-white rounded" style="width: 100%; max-width: 500px;">
+        <h3 class="text-center mb-4 text-info">
+            <i class="fas fa-user-plus d-block mb-2"></i> Crear Cuenta
+        </h3>
+        <form action="/registro" method="POST">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" autofocus required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="usuario@papelia.com" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="pass" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="pass" name="pass" placeholder="Mínimo 8 caracteres" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="confirm_pass" class="form-label">Confirmar Contraseña</label>
+                <input type="password" class="form-control" id="confirm_pass" name="confirm_pass" placeholder="Repite tu contraseña" required>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="tyc" required>
+                <label class="form-check-label small" for="tyc">Acepto los Términos y Condiciones</label>
+            </div>
+
+            <div class="d-grid gap-2 mt-4">
+                <button type="submit" class="btn btn-info text-white fw-bold">
+                    <i class="fas fa-check-circle"></i> Registrarme
+                </button>
+                <button type="reset" class="btn btn-secondary">
+                    <i class="fas fa-eraser"></i> Restablecer
+                </button>
+                
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
